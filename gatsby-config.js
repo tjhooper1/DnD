@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Forty V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
+    title: "DnD Dice",
+    author: "Thomas Hooper",
+    description: "Custom DnD Dice"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
