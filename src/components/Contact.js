@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contact = (props) => (
+const Contact = props => (
     <section id="contact">
         <div className="inner">
             <section>
@@ -15,11 +15,23 @@ const Contact = (props) => (
                     </div>
                     <div className="field">
                         <label htmlFor="message">Message</label>
-                        <textarea name="message" id="message" rows="6"></textarea>
+                        <textarea
+                            name="message"
+                            id="message"
+                            rows="6"
+                        ></textarea>
                     </div>
                     <ul className="actions">
-                        <li><input type="submit" value="Send Message" className="special" /></li>
-                        <li><input type="reset" value="Clear" /></li>
+                        <li>
+                            <input
+                                type="submit"
+                                value="Send Message"
+                                className="special"
+                            />
+                        </li>
+                        <li>
+                            <input type="reset" value="Clear" />
+                        </li>
                     </ul>
                 </form>
             </section>
@@ -42,9 +54,13 @@ const Contact = (props) => (
                     <div className="contact-method">
                         <span className="icon alt fa-home"></span>
                         <h3>Address</h3>
-                        <span>1234 Somewhere Road #5432<br />
-                        Nashville, TN 00000<br />
-                        United States of America</span>
+                        <span>
+                            1234 Somewhere Road #5432
+                            <br />
+                            Nashville, TN 00000
+                            <br />
+                            United States of America
+                        </span>
                     </div>
                 </section>
             </section>

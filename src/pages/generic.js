@@ -4,11 +4,12 @@ import Layout from '../components/layout'
 
 import pic11 from '../assets/images/pic11.jpg'
 
-const Generic = props => (
+const Generic = () => (
     <Layout>
         <Helmet>
-            <title>Generic - Forty by HTML5 UP</title>
+            <title>Generic</title>
             <meta name="description" content="Generic Page" />
+            <meta name="keywords" content="dnd, dice"/>
         </Helmet>
 
         <div id="main" className="alt">

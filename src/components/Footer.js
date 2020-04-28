@@ -31,7 +31,7 @@ const Footer = props => (
                 </li>
             </ul>
             <ul className="copyright">
-                <li>&copy; DnD</li>
+                <li>&copy; 2020 DiceDomes</li>
             </ul>
         </div>
     </footer>

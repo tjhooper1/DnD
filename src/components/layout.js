@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import '../assets/scss/main.scss'
 import Header from './Header'
@@ -12,26 +11,26 @@ class Layout extends React.Component {
         super(props)
         this.state = {
             isMenuVisible: false,
-            loading: 'is-loading'
+            loading: 'is-loading',
         }
         this.handleToggleMenu = this.handleToggleMenu.bind(this)
     }
 
-    componentDidMount () {
+    componentDidMount() {
         this.timeoutId = setTimeout(() => {
-            this.setState({loading: ''});
-        }, 100);
+            this.setState({ loading: '' })
+        }, 100)
     }
 
-    componentWillUnmount () {
+    componentWillUnmount() {
         if (this.timeoutId) {
-            clearTimeout(this.timeoutId);
+            clearTimeout(this.timeoutId)
         }
     }
 
     handleToggleMenu() {
         this.setState({
-            isMenuVisible: !this.state.isMenuVisible
+            isMenuVisible: !this.state.isMenuVisible,
         })
     }
 
@@ -39,7 +38,11 @@ class Layout extends React.Component {
         const { children } = this.props
 
         return (
-            <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
+            <div
+                className={`body ${this.state.loading} ${
+                    this.state.isMenuVisible ? 'is-menu-visible' : ''
+                }`}
+            >
                 <div id="wrapper">
                     <Header onToggleMenu={this.handleToggleMenu} />
                     {children}
