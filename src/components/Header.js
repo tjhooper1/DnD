@@ -7,7 +7,7 @@ const Header = props => (
     <header id="header" className="alt">
         <Link to="/" className="logo">
             <div className="banner_logo">
-                <img width="120" src={bannerLogo} />
+                <img alt="banner logo" width="120" src={bannerLogo} />
                 <span>VISIT OUR KICKSTARTER</span>
             </div>
         </Link>
