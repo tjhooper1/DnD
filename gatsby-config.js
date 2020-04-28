@@ -1,11 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: "DnD Dice",
+    title: "DiceDome",
     author: "Thomas Hooper",
-    description: "Custom DnD Dice"
+    description: "Custom RPG Dice"
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/assets/images`,
+        name: 'images',
+      },
+    },
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

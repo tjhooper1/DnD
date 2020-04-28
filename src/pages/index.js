@@ -102,4 +102,16 @@ class HomeIndex extends React.Component {
     }
 }
 
+export const query = graphql`
+    query {
+        img: file(relativePath: { eq: "banner-logo.png" }) {
+            childImageSharp {
+                fixed(width: 125) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+    }
+`
+
 export default HomeIndex
