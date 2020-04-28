@@ -7,6 +7,7 @@ import pic11 from '../assets/images/pic11.jpg'
 const Generic = () => (
     <Layout>
         <Helmet>
+            <html lang="en"/>
             <title>Generic</title>
             <meta name="description" content="Generic Page" />
             <meta name="keywords" content="dnd, dice"/>

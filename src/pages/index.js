@@ -21,7 +21,8 @@ class HomeIndex extends React.Component {
                         { name: 'description', content: 'Dice Domes' },
                         { name: 'keywords', content: 'dnd, dungeons and dragons, dice, custom' },
                     ]}
-                ></Helmet>
+                    
+                ><html lang="en"/></Helmet>
 
                 <Banner />
 

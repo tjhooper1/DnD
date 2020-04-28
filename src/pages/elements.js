@@ -10,6 +10,7 @@ import pic10 from '../assets/images/pic10.jpg'
 const Elements = () => (
     <Layout>
         <Helmet>
+            <html lang="en"/>
             <title>Elements</title>
             <meta name="description" content="Elements Page" />
         </Helmet>

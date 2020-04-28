@@ -11,6 +11,7 @@ import pic10 from '../assets/images/pic10.jpg'
 const Landing = () => (
     <Layout>
         <Helmet>
+            <html lang="en"/>
             <title>Landing</title>
             <meta name="description" content="Landing Page" />
         </Helmet>
